@@ -1,18 +1,16 @@
 ﻿//Aлгоритм нахождения произведения двух натуральных чисел без использования умножения.
 program Multiplication;
 
-var Multiplier1, Multiplier2,composition, i : integer;
+var
+  multiplier1, multiplier2, composition, i: integer;
 
 begin
   writeln('Введите первый множитель');
-  readln(Multiplier1);
+  readln(multiplier1);
   writeln('Введите второй множитель');
-  readln(Multiplier2);
-  for i:= 1 to Multiplier2 do begin
-    composition+=Multiplier1;
+  readln(multiplier2);
+  for i := 1 to multiplier2 do begin
+    composition += multiplier1;
   end;
-  writeln ('Результат равен:', composition);
-  
-  
-  
+  writeln('Результат равен: ', composition);
 end.
