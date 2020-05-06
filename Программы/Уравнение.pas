@@ -23,7 +23,7 @@ begin
   end else begin
     y := b - y;
     x := y / k; 
-    answer := 'Ответ: '+ x 
+    answer := 'Ответ: '+ x;
   end;
-  writeln (x)
+  writeln(x);
 end.
