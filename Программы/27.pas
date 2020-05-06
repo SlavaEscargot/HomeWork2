@@ -10,7 +10,7 @@ begin
   while sum < 324  do begin
     number += 4;
     replay += 1;
-    sum += number
+    sum += number;
   end; 
   writeln(replay); 
 end.
