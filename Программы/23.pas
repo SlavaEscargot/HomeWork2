@@ -1,20 +1,18 @@
-﻿// Опредиление кол-ва одинаковых цифр в трёхзначном числе
+﻿// Опредиление кол-ва одинаковых цифр в  числе
 
 program n_23;
 var
-  coincidence, number, a, b, c: integer;
-
-begin 
+  coincidence, s : integer;
+  list : string;
+  number : real;
+begin
   write('Введите число ');
   read(number);
-  a := number mod 10;
-  number := number div 10;
-  b := number mod 10;
-  c := number div 10;
-  if (a = b) or (b = c) or (c = a) then begin
-    write('Есть');  
-  end else begin
-    write('Нету');
-  end;
-  
+  s := number mod 10 ;
+  list := list + s;
+  number /= 10;
+
+
+
+
 end.
