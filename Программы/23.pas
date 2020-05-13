@@ -1,18 +1,22 @@
-﻿// Опредиление кол-ва одинаковых цифр в  числе
+﻿// Определение кол-ва одинаковых цифр в  числе
 
 program n_23;
 var
-  coincidence, s : integer;
-  list : string;
-  number : real;
+  lastDigit,number : integer;
+  answer : string;
+
 begin
   write('Введите число ');
   read(number);
-  s := number mod 10 ;
-  list := list + s;
-  number /= 10;
-
-
-
-
+  answer := 'Нет повторов';
+repeat
+  if pos (lastDigit+'',number+'')<>0 then begin
+    answer := 'Есть повторы';
+    break
+  end;
+  lastDigit := number mod 10 ;
+  number := number div 10;
+  
+until number<=0;
+write(answer);
 end.
