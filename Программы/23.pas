@@ -1,22 +1,15 @@
-﻿// Определение кол-ва одинаковых цифр в  числе
+﻿// Опредиление кол-ва одинаковых цифр в трёхзначном числе
 
 program n_23;
-var
-  lastDigit,number : integer;
-  answer : string;
+var coincidence, number, a,d, c: integer;
 
-begin
-  write('Введите число ');
-  read(number);
-  answer := 'Нет повторов';
-repeat
-  if pos (lastDigit+'',number+'')<>0 then begin
-    answer := 'Есть повторы';
-    break
-  end;
-  lastDigit := number mod 10 ;
-  number := number div 10;
+begin 
+  write ('Введите число ');
+  read (number);
   
-until number<=0;
-write(answer);
+  
+  
+  
+  
+  
 end.
