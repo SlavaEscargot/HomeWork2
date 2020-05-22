@@ -1,31 +1,26 @@
-﻿
+﻿//Программа, реализующая алгоритм раблты касира, выдающего покупателю сдачу
 program n10;
 
 var
-  s, k10, k50, k100, k500,Subtrahend : integer;
-
-
-
+  change , k10, k50, k100, k500 : integer;
 begin
-  writeln('Введите сдачу');
-  readln(s);
   
-  k500 := s div 500;
-  Subtrahend := 500 * k500;
-  s -= Subtrahend;
+  change  := readInteger('Введите сдачу');
   
-  k100 := s div 100;
-  Subtrahend := 100 * k100;
-  s -= Subtrahend;
+  k500 := change  div 500;
+  change  -= 500 * k500;
   
-  k50 := s div 50;
-  Subtrahend := 50 * k50;
-  s -= Subtrahend;
+  k100 := change  div 100;
+  change  -= 100 * k100;
   
-  k10 := s div 10;
-  writeln('Сдач по 500 рублей = ',k500);
-  writeln('Сдач по 100 рублей = ',k100);
-  writeln('Сдач по 50 рублей = ',k50);
-  writeln('Сдач по 10 рублей = ',k10);
+  k50 := change  div 50;
+  change  -= 50 * k50;
+  
+  k10 := change  div 10;
+  writeln('Следует сдать:');
+  writeln('банкнот по 500 рублей = ', k500);
+  writeln('банкнот по 100 рублей = ', k100);
+  writeln('банкнот по 50 рублей = ', k50);
+  writeln('банкнот по 10 рублей = ', k10);
 end.
 //Малышев Святослав 8б

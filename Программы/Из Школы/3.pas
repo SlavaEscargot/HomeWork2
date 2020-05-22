@@ -1,19 +1,15 @@
-﻿program N3;
+﻿//Программа по нахождению растояния между двумя точками на координатной плоскости 
+program N3;
 
 var
-  x1, x2, y1, y2  : integer;
+  xa, xb, ya, yb  : integer;
   d : real;
 begin
-  writeln('Ввеите коардинату x1');
-  readln(x1);
-  writeln('Ввеите коардинату x2');
-  readln(x2);
-  writeln('Ввеите коардинату y1');
-  readln(y1);
-  writeln('Ввеите коардинату y2');
-  readln(y2);
-  d := sqrt( sqr(x1-x2) + sqr(y1-y2) );
-  writeln('Растояние = ',d);
- 
+  xa := readInteger('Введите коардинату xa');
+  xb := readInteger('Введите коардинату xa');
+  ya := readInteger('Введите коардинату xa');
+  yb := readInteger('Введите коардинату xa');
+  d := sqrt(sqr(xb-xa) + sqr(yb-ya));
+  writeln('Растояние = ', d);
 end.
 //Малышев Святослав 8 б

@@ -1,10 +1,10 @@
-﻿//Программа по вычеслению площади треугольника
+﻿//Программа по вычеслению площади треугольника.
 program  n4 ;
-	var   
+	var
 	  a,b,c : integer ;
 	  p,s : real;
-begin 
-	writeln('Введите a');
+begin
+  writeln('Введите a');
   readln(a);
   writeln('Введите b');
   readln(b);
@@ -12,6 +12,6 @@ begin
   readln(c);
   p := (a+b+c)/2;
   s := sqrt(p*(p-a)*(p-b)*(p-c));
-  writeln('Площадь = ',s );
-end.   
-//Малышев Святослав 6 б
+  writeln('Площадь = ', s );
+end.
+//Малышев Святослав 6 б.
