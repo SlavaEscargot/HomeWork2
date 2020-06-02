@@ -11,6 +11,8 @@ begin
   read(number);
   answer := 'Нет повторов';
   repeat
+    lastDigit := number mod 10;
+    number := number div 10; 
     if pos(lastDigit + '', number + '') <> 0 then begin
       answer := 'Есть повторы';
       break
