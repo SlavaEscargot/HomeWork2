@@ -7,7 +7,7 @@ begin
   repeat
     theNumberOfUser:= readInteger('Введите число');
     if (theNumberOfUser > 99) and (theNumberOfUser < 1000) then begin
-      if (theNumberOfUser mod 10 = 0) or (theNumberOfUser mod 10 = 2) or (theNumberOfUser mod 10 = 4) or (theNumberOfUser mod 10 = 6) or (theNumberOfUser mod 10 = 8)then begin
+      if (theNumberOfUser mod 2 = 0)then begin
         answer += 1;
          end;
     end;
