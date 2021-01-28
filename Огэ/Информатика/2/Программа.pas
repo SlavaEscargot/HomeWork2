@@ -1,12 +1,12 @@
 ﻿Program n152;
 var
-  user number, risult:integer;
+  entered, risult:integer;
 begin
   repeat
-    read(user number);
-    if (user number < 1000) and (user number > risult) then begin
-      risult := user number; 
+    read(entered);
+    if (entered < 1000) and (entered > risult) then begin
+      risult := entered; 
     end;   
-  until user number = 0 ;
+  until entered = 0 ;
   write(risult);
 end.
