@@ -1,0 +1,41 @@
+'''#assignment 9
+i = 0
+n = 0
+while n != 67:
+    s = 0 + i
+    n = 105
+    while n > s:
+        s = s + 3
+        n = n - 2
+    i += 1
+print(i)
+
+#assignment 25
+number = 190061
+while number != 190080:
+    a = []
+    divisor = number
+    while divisor <= number:
+        if divisor == 0:
+            break
+        quotient = number / divisor
+        if (quotient % 2 == 1 or quotient % 2 == 0) and divisor % 2 == 1:
+            a.append(divisor)
+        #    print(quotient, '----', divisor)
+        divisor -= 1
+    if len(a) == 4:
+      print(a)
+    number += 1
+
+#assignment 22
+quantity = 0
+for x in range(100000):
+    a = 0
+    b = 0
+    while x > 0:
+        a += 1
+        b += (x % 100)
+        x //= 100
+    if a == 2 and b == 12:
+        quantity += 1
+print("Таких чисел -", quantity)'''
